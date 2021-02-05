@@ -6,11 +6,7 @@ class CashRegister
     @discount = discount
     @new = []
     @total = 0
-  end
-def title
-   blank=[]
- end
- 
+  end 
   def add_item(title, amount, quantity=1)
     self.total += amount * quantity
     quantity.times do
@@ -26,10 +22,6 @@ def title
       "There is no discount to apply."
     end
   end
-
-def items
-new << title
-end
 
   def void_last_transaction
     self.total = self.total - self.last_transaction
